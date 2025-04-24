@@ -15,6 +15,7 @@ async function bootstrap() {
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     credentials: true,
     allowedHeaders: 'Content-Type, Accept, Authorization',
+    exposedHeaders: ['Set-Cookie']  // Add this line
   });
 
   app.useGlobalPipes(new ValidationPipe());

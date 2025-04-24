@@ -90,9 +90,9 @@ export class AuthController {
       res.cookie('access_token', result.access_token, {
         httpOnly: true,
         secure: true,
-        sameSite: 'lax',
+        sameSite: 'none',
         maxAge: 24 * 60 * 60 * 1000, // 24 hours
-        domain: '.vercel.app'
+        // domain: '.vercel.app'
       });
 
       // Redirect based on master password status
