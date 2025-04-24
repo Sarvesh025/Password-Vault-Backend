@@ -92,7 +92,7 @@ export class AuthController {
         secure: true,
         sameSite: 'none',
         maxAge: 24 * 60 * 60 * 1000, // 24 hours
-        // domain: '.vercel.app'
+        path: '/',
       });
 
       // Redirect based on master password status
